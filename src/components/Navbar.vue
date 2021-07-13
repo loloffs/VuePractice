@@ -1,7 +1,8 @@
 <template>
   <div class="navbar">
-    <h1>Thank you for your interest in {{ companyName }}</h1>
-    <p>{{subheading}}</p>
+    <img id="logo" alt="logo" :src="`${logo}`">
+    <h1>{{ mainHeading }}</h1>
+    <p>{{ subHeading }}</p>
   </div>
 </template>
 
@@ -9,8 +10,9 @@
 export default {
   name: 'Navbar',
   props: {
-    companyName: String,
-    subheading: String,
+    mainHeading: String,
+    subHeading: String,
+    logo: Image
   }
 }
 </script>
@@ -23,12 +25,21 @@ export default {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: grey;
+  background-color: black;
   width: 100%;
   position: sticky;
   top: 0;
+  z-index: 10000;
 }
 h1 {
   margin: 10px 0 0 0;
+  color: grey;
+}
+#logo {
+  width: 5em;
+  height: auto;
+}
+p {
+  color: grey;
 }
 </style>
