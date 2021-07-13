@@ -5,6 +5,7 @@
         <h3 class="subheading" type="text">Please fill in the relevant information</h3>  
         <form
           name=”ApplicationForm”
+          onsubmit="return confirm('Do you really want to submit the form?');"
         >
           <div id="nameQuote">
             <input id="firstName" class="quoteInput" name="firstName" placeholder="First Name">
@@ -20,7 +21,7 @@
             <input id="homeAddressInput" name="address" placeholder="Postal Code">
           </div>
           <div>
-            <textarea class="whyWorkHere" rows="4" cols="50" placeholder="Why do you want to work at NAME?"></textarea>
+            <textarea class="whyWorkHere" rows="4" cols="50" :placeholder="`Why do you want to work at ${companyName}?`"></textarea>
           </div>
           <div id="checkBoxes">
               <input class="checkboxOptions" type="checkbox" value="new"> I am a {{ citizenship }} citizen<br>
@@ -73,11 +74,13 @@ export default {
 
 .subheading {
   color: grey;
+  display: flex;
   opacity: .7;
   font-family: 'Helvetica neue';
   font-weight: 300;
   margin-left: 1.6em;
   margin-bottom: 2em;
+  font-weight: 400;
 }
 
 #nameQuote {
