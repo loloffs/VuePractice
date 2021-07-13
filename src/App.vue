@@ -1,15 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
+  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+  <Navbar 
+    companyName="Article"
+    subheading="Please fill in the required information"
+  />
   <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <TestComponent msg="This is just a test"/>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import Navbar from './components/Navbar.vue'
+import TestComponent from './components/TestComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Navbar,
+    HelloWorld,
+    TestComponent,
   }
 }
 </script>
@@ -21,6 +30,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+
 }
 </style>
