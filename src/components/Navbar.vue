@@ -27,7 +27,7 @@ export default {
   align-items: center;
   background-color: black;
   width: 100%;
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   z-index: 10000;
 }
