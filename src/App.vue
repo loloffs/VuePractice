@@ -4,9 +4,6 @@
     subHeading="A job application form for practice purposes"
     logo="https://neufert-cdn.archdaily.net/uploads/account_logo/logo/1795/large_large_article_logo_400x125__1_.png"
   />
-  <HelloWorld 
-    msg="Welcome to Your Vue.js App"
-  />
   <div id="applicationContainer">
     <Form
       companyName="Article"
@@ -17,7 +14,7 @@
       img="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png"
       name="John Smith"
       title="Engineering Manager"
-      email="examle@email.com"
+      email="example@email.com"
       phone="123-456-7890"
     />
   </div>

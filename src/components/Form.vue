@@ -245,13 +245,6 @@
 #submitButton:hover {
   opacity: .95;
 }
-#container {
-  display: flex;
-  justify-content: center;
-}
-#mainImg {
-  width: 90%;
-}
 #contactForm {
   margin-left: 2.5em;
 }
