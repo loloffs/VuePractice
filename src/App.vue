@@ -1,11 +1,12 @@
 <template>
-  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
   <Navbar 
     mainHeading="Vue Practice"
     subHeading="A job application form for practice purposes"
     logo="https://neufert-cdn.archdaily.net/uploads/account_logo/logo/1795/large_large_article_logo_400x125__1_.png"
   />
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HelloWorld 
+    msg="Welcome to Your Vue.js App"
+  />
   <div id="applicationContainer">
     <Form
       companyName="Article"

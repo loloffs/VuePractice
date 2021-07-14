@@ -1,106 +1,106 @@
 <template>
-    <div id="contactQuoteContainer">
-      <div id="contactForm">
-        <h1 class="heading" type="text">Thank you for your interest in working at {{ companyName }}</h1>
-        <h3 class="subheading" type="text">Please fill in the relevant information</h3>  
-        <form
-          id="applicationSubmit"
-          name=”ApplicationForm”
-          onsubmit="submitAlert"
-          v-on:submit="submit"
-        >
-          <div id="nameQuote">
-            <input type="firstName" v-model="firstName" id="firstName" class="quoteInput" name="firstName" placeholder="First Name" />
-            <input type="lastName" v-model="lastName" id="lastName" class="quoteInput" name="lastName" placeholder="Last Name">
-          </div>
-          <div id="contactQuote">
-            <input type="email" v-model="email" id="email" class="quoteInput" name="email" placeholder="Email">
-            <input type="phone" v-model="phone" id="phone" class="quoteInput" name="phone" placeholder="Phone Number">
-          </div>
-          <div class="homeAddress">
-            <input type="homeAddress" v-model="homeAddress" id="homeAddressInput" name="address" placeholder="Home Address">
-            <input type="city" v-model="city" id="homeAddressInput" name="address" placeholder="City">
-            <input type="postalCode" v-model="postalCode" id="homeAddressInput" name="address" placeholder="Postal Code">
-          </div>
-          <div>
-            <textarea type="whyWorkHere" v-model="whyWorkHere" class="whyWorkHere" rows="4" cols="50" :placeholder="`Why do you want to work at ${companyName}?`"></textarea>
-          </div>
-          <div id="teams">
-            <h3 class="subheading" type="text">Which teams would interst you the most?</h3>
-             <div class="teamChoice">
-              <input type="checkbox" value="Team 1" v-model="teams">
-              <label>Front End</label>
-            </div>
+  <div id="contactQuoteContainer">
+    <div id="contactForm">
+      <h1 class="heading" type="text">Thank you for your interest in working at {{ companyName }}</h1>
+      <h3 class="subheading" type="text">Please fill in the relevant information</h3>  
+      <form
+        id="applicationSubmit"
+        name=”ApplicationForm”
+        onsubmit="submitAlert"
+        v-on:submit="submit"
+      >
+        <div id="nameQuote">
+          <input type="firstName" v-model="firstName" id="firstName" class="quoteInput" name="firstName" placeholder="First Name" />
+          <input type="lastName" v-model="lastName" id="lastName" class="quoteInput" name="lastName" placeholder="Last Name">
+        </div>
+        <div id="contactQuote">
+          <input type="email" v-model="email" id="email" class="quoteInput" name="email" placeholder="Email">
+          <input type="phone" v-model="phone" id="phone" class="quoteInput" name="phone" placeholder="Phone Number">
+        </div>
+        <div class="homeAddress">
+          <input type="homeAddress" v-model="homeAddress" id="homeAddressInput" name="address" placeholder="Home Address">
+          <input type="city" v-model="city" id="homeAddressInput" name="address" placeholder="City">
+          <input type="postalCode" v-model="postalCode" id="homeAddressInput" name="address" placeholder="Postal Code">
+        </div>
+        <div>
+          <textarea type="whyWorkHere" v-model="whyWorkHere" class="whyWorkHere" rows="4" cols="50" :placeholder="`Why do you want to work at ${companyName}?`"></textarea>
+        </div>
+        <div id="teams">
+          <h3 class="subheading" type="text">Which teams would interst you the most?</h3>
             <div class="teamChoice">
-              <input type="checkbox" value="Team 2" v-model="teams">
-              <label>Back End</label>
-            </div>
-            <div class="teamChoice">
-              <input type="checkbox" value="Team 3" v-model="teams">
-              <label>Team 3</label>
-            </div>
-            <div class="teamChoice">
-              <input type="checkbox" value="Team 4" v-model="teams">
-              <label>Team 4</label>
-            </div>
+            <input type="checkbox" value="Team 1" v-model="teams">
+            <label>Front End</label>
           </div>
-          <div id="dropdownMenu">
-            <h3 class="subheading" type="text">How did you hear about the {{ positionTitle }} position with {{ companyName }}?</h3>
-            <select v-model="dropdown" id="dropdown" name="choices" >
-              <option value="" disabled selected hidden>Select</option>
-              <option value="Current Employee">Current Employee</option>
-              <option value="Word of Mouth">Word of Mouth</option>
-              <option value="Job Board">Job Board</option>
-              <option value="Other">Other</option>
-            </select>
-            <br>
-            <div id="terms">
-              <input v-model="termsConditions" class="checkboxOptions" type="checkbox" value="citizen">
-              <label>Agree to terms and conditions</label>
-            </div>
-            <input id="submitButton" name="dropdown" type="submit" value="Submit">
+          <div class="teamChoice">
+            <input type="checkbox" value="Team 2" v-model="teams">
+            <label>Back End</label>
           </div>
-        </form>
-      </div>
+          <div class="teamChoice">
+            <input type="checkbox" value="Team 3" v-model="teams">
+            <label>Team 3</label>
+          </div>
+          <div class="teamChoice">
+            <input type="checkbox" value="Team 4" v-model="teams">
+            <label>Team 4</label>
+          </div>
+        </div>
+        <div id="dropdownMenu">
+          <h3 class="subheading" type="text">How did you hear about the {{ positionTitle }} position with {{ companyName }}?</h3>
+          <select v-model="dropdown" id="dropdown" name="choices" >
+            <option value="" disabled selected hidden>Select</option>
+            <option value="Current Employee">Current Employee</option>
+            <option value="Word of Mouth">Word of Mouth</option>
+            <option value="Job Board">Job Board</option>
+            <option value="Other">Other</option>
+          </select>
+          <br>
+          <div id="terms">
+            <input v-model="termsConditions" class="checkboxOptions" type="checkbox" value="citizen">
+            <label>Agree to terms and conditions</label>
+          </div>
+          <input id="submitButton" name="dropdown" type="submit" value="Submit">
+        </div>
+      </form>
     </div>
+  </div>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      firstName: "",
-      lastName: "",
-      email: "",
-      phone: "",
-      homeAddress: "",
-      city: "",
-      postalCode: "",
-      whyWorkHere: "",
-      dropdown: "",
-      termsConditions: false,
-      teams: []
-    }
-  },
-  props: [
-    "citizenship",
-    "companyName",
-    "positionTitle",
-
-  ],
-  name: "Form",
-  methods: {
-    submit: function() {
-      alert(
-        `First Name: ${this.firstName}\nLast Name: ${this.lastName}\nEmail: ${this.email}\nPhone: ${this.phone}\nLast Home Address: ${this.homeAddress}\nCity: ${this.city}\nPostal Code: ${this.postalCode}\nDescription: ${this.whyWorkHere}\nDropdown: ${this.dropdown}\nTerms and Conditions: ${this.termsConditions}\nTeams: ${this.teams}`
+  export default {
+    data() {
+      return {
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        homeAddress: "",
+        city: "",
+        postalCode: "",
+        whyWorkHere: "",
+        dropdown: "",
+        termsConditions: false,
+        teams: []
+      }
+    },
+    props: [
+      "citizenship",
+      "companyName",
+      "positionTitle",
+    ],
+    name: "Form",
+    methods: {
+      submit: function() {
+        alert(
+          `First Name: ${this.firstName}\nLast Name: ${this.lastName}\nEmail: ${this.email}\nPhone: ${this.phone}\nLast Home Address: ${this.homeAddress}\nCity: ${this.city}\nPostal Code: ${this.postalCode}\nDescription: ${this.whyWorkHere}\nDropdown: ${this.dropdown}\nTerms and Conditions: ${this.termsConditions}\nTeams: ${this.teams}`
         );
+      },
+    },
+    updated: function () {
+      console.log(this.$data)
     }
   }
-}
-
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   * {
   scroll-behavior: smooth;
@@ -231,7 +231,6 @@ export default {
   margin-left: 1.8em;
   margin-top: 2em;
   width: 10em;
-  /* background-color: #2c5370; */
   background-color: #303030;
   border: none;
   color: white;
@@ -249,10 +248,8 @@ export default {
 #container {
   display: flex;
   justify-content: center;
-  /* position: relative; */
 }
 #mainImg {
-  /* margin-top: 4px; */
   width: 90%;
 }
 #contactForm {

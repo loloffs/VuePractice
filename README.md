@@ -1,5 +1,7 @@
 # vue-app
 
+# A practice vue app building a job application form
+
 ## Project setup
 ```
 npm install

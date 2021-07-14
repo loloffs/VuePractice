@@ -17,7 +17,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .navbar {
   display: flex;
@@ -27,7 +26,6 @@ export default {
   align-items: center;
   background-color: black;
   width: 100%;
-  /* position: sticky; */
   top: 0;
   z-index: 10000;
 }
