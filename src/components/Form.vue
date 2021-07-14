@@ -28,11 +28,11 @@
         <div id="teams">
           <h3 class="subheading" type="text">Which teams would interst you the most?</h3>
             <div class="teamChoice">
-            <input type="checkbox" value="Team 1" v-model="teams">
+            <input type="checkbox" value="Front End" v-model="teams">
             <label>Front End</label>
           </div>
           <div class="teamChoice">
-            <input type="checkbox" value="Team 2" v-model="teams">
+            <input type="checkbox" value="Back End" v-model="teams">
             <label>Back End</label>
           </div>
           <div class="teamChoice">
