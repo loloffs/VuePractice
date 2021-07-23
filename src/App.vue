@@ -6,7 +6,7 @@
   />
   <div id="applicationContainer">
     <Form
-      companyName="Article"
+      companyName="Company Name"
       positionTitle="Junior Developer"
       citizenship="Canadian"
     />
