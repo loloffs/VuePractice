@@ -28,19 +28,19 @@
         <div id="teams">
           <h3 class="subheading" type="text">Which teams would interst you the most?</h3>
             <div class="teamChoice">
-            <input type="checkbox" value="Test" v-model="teams">
+            <input type="checkbox" :value="`${teamChoice1}`" v-model="teams">
             <label>{{ teamChoice1 }}</label>
           </div>
           <div class="teamChoice">
-            <input type="checkbox" value="Back End" v-model="teams">
+            <input type="checkbox" :value="`${teamChoice2}`" v-model="teams">
             <label>{{ teamChoice2 }}</label>
           </div>
           <div class="teamChoice">
-            <input type="checkbox" value="Team 3" v-model="teams">
+            <input type="checkbox" :value="`${teamChoice3}`" v-model="teams">
             <label>{{ teamChoice3 }}</label>
           </div>
           <div class="teamChoice">
-            <input type="checkbox" value="Team 4" v-model="teams">
+            <input type="checkbox" :value="`${teamChoice4}`" v-model="teams">
             <label>{{ teamChoice4 }}</label>
           </div>
         </div>
