@@ -1,7 +1,7 @@
 <template>
   <Navbar 
-    mainHeading="Vue Practice"
-    subHeading="A job application form for practice purposes"
+    mainHeading="Vue Cars"
+    subHeading="Job Application for Vue Cars sales position"
     logo="https://www.freepnglogos.com/uploads/zent-logo-png-car-22.png"
   />
   <div id="applicationContainer">
@@ -13,7 +13,7 @@
     <HiringInfo 
       img="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png"
       name="John Smith"
-      title="Engineering Manager"
+      title="Sales Manager"
       email="example@email.com"
       phone="123-456-7890"
     />
