@@ -9,6 +9,10 @@
       companyName="Vue Cars"
       positionTitle="Jr. Sales Representative"
       citizenship="Canadian"
+      teamChoice1="Sports Cars"
+      teamChoice2="Family Cars"
+      teamChoice3="Trucks"
+      teamChoice4="Other/No preference"
     />
     <HiringInfo 
       img="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png"

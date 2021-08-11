@@ -28,20 +28,20 @@
         <div id="teams">
           <h3 class="subheading" type="text">Which teams would interst you the most?</h3>
             <div class="teamChoice">
-            <input type="checkbox" value="Front End" v-model="teams">
-            <label>Front End</label>
+            <input type="checkbox" value="Test" v-model="teams">
+            <label>{{ teamChoice1 }}</label>
           </div>
           <div class="teamChoice">
             <input type="checkbox" value="Back End" v-model="teams">
-            <label>Back End</label>
+            <label>{{ teamChoice2 }}</label>
           </div>
           <div class="teamChoice">
             <input type="checkbox" value="Team 3" v-model="teams">
-            <label>Team 3</label>
+            <label>{{ teamChoice3 }}</label>
           </div>
           <div class="teamChoice">
             <input type="checkbox" value="Team 4" v-model="teams">
-            <label>Team 4</label>
+            <label>{{ teamChoice4 }}</label>
           </div>
         </div>
         <div id="dropdownMenu">
@@ -82,11 +82,15 @@
         teams: []
       }
     },
-    props: [
-      "citizenship",
-      "companyName",
-      "positionTitle",
-    ],
+    props: {
+    citizenship: String,
+    companyName: String,
+    positionTitle: String,
+    teamChoice1: String,
+    teamChoice2: String,
+    teamChoice3: String,
+    teamChoice4: String
+    },
     name: "Form",
     methods: {
       submit: function() {
