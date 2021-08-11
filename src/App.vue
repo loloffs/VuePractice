@@ -2,11 +2,11 @@
   <Navbar 
     mainHeading="Vue Practice"
     subHeading="A job application form for practice purposes"
-    logo="https://neufert-cdn.archdaily.net/uploads/account_logo/logo/1795/large_large_article_logo_400x125__1_.png"
+    logo="https://www.freepnglogos.com/uploads/zent-logo-png-car-22.png"
   />
   <div id="applicationContainer">
     <Form
-      companyName="Company Name"
+      companyName="Vue Cars"
       positionTitle="Junior Developer"
       citizenship="Canadian"
     />
