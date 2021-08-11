@@ -90,6 +90,9 @@
     name: "Form",
     methods: {
       submit: function() {
+        if(this.$data.termsConditions === false) {
+          return console.log("Please agree to the terms and conditions");
+        }
         alert(
           `First Name: ${this.firstName}\nLast Name: ${this.lastName}\nEmail: ${this.email}\nPhone: ${this.phone}\nLast Home Address: ${this.homeAddress}\nCity: ${this.city}\nPostal Code: ${this.postalCode}\nDescription: ${this.whyWorkHere}\nDropdown: ${this.dropdown}\nTerms and Conditions: ${this.termsConditions}\nTeams: ${this.teams}`
         );

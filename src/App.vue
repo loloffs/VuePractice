@@ -7,7 +7,7 @@
   <div id="applicationContainer">
     <Form
       companyName="Vue Cars"
-      positionTitle="Junior Developer"
+      positionTitle="Jr. Sales Representative"
       citizenship="Canadian"
     />
     <HiringInfo 
